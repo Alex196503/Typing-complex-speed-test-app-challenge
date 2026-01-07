@@ -154,7 +154,6 @@ document.addEventListener(('DOMContentLoaded'),()=>{
     {
        let words = CorrectChars / 5 ;
        let seconds = parseFloat(timeParagraph.textContent);
-       console.log(seconds);
        
        if(seconds ===0) return;
        let minutes = seconds / 60;
