@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed test app</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container-fluid">
+            <div class="container-image" aria-hidden="true">
+            </div>
+        <div class="container-right">
+            <img src="images/icon-personal-best.svg" alt="Icon with a trophy">
+            <h3 class="lead">Personal best:<span class="span-wpm"> 92 WPM </span></h3>
+        </div>
+        </div>
+        <div class="section-container">
+            <div class="parameters-container">
+                <h3 class="lead" aria-live="polite">WPM: <span class="your-wpm">0</span></h3>
+                <h3 class="lead" aria-live="polite">Accuracy: <span class="your-accuracy">0%</span></h3>
+                <h3 id="last-paragraph" class="lead" aria-live="polite">Time: <span class="your-time">0:60</span></h3>
+            </div>
+            <div class="container">
+                <section class="difficulty-container" aria-describedby="first-par">
+                <h3 class="lead" id="first-par">Difficulty</h3>
+                <button type="button" class="btn-white" data-difficulty="easy">Easy</button>
+                <button id="mediumButton" type="button" class="btn-white" data-difficulty="medium">Medium</button>
+                <button type="button" class="btn-white active" data-difficulty="active">Hard</button>
+                </section>
+                <section class="time-container" aria-describedby="second-par">
+                    <h3 class="lead" id="second-par">Mode:</h3>
+                    <button type="button" class="btn-white active" data-timer="Yes">Timed(60s)</button>
+                    <button type="button" class="btn-white" data-timer="No">Passage</button>
+                </section>
+            </div>
+                <div class="container-dropdown hidden">
+                    <button id="first-btn" class="btn-dropdown" type="button">Hard</button>
+                    <div id="first-dropdown" class="container-content" aria-live="polite">
+                        <div class="wrapper">
+                        <input type="radio" name="difficulty" value="Easy" id="Easy">
+                        <label for="Easy">Easy</label>
+                        </div>
+                        <div class="wrapper">
+                        <input type="radio" name="difficulty" value="Medium" id="Medium">
+                        <label for="Medium">Medium</label>
+                        </div>
+                        <div class="wrapper last">
+                        <input type="radio" name="difficulty" value="Hard" id="Hard">
+                        <label for="Hard">Hard</label>
+                        </div>
+                    </div> 
+                    <button id="second-btn" class="btn-dropdown second" type="button">Timed(60s)</button>
+                    <div id="second-dropdown" class="container-content" aria-live="polite">
+                        <div class="wrapper">
+                            <input type="radio" name="timing" value="Timed(60s)" id="timed">
+                            <label for="timed">Timed(60s)</label>
+                        </div>
+                        <div class="wrapper last">
+                            <input type="radio" name="timing" value="Passage" id="timed2">
+                            <label for="timed2">Passage</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <main class="main">
+        <p class="typing-text">The archaeological expedition unearthed artifacts that complicated prevailing theories about Bronze Age trade networks. Obsidian from Anatolia, lapis lazuli from Afghanistan, and amber from the Baltic—all discovered in a single Mycenaean tomb—suggested commercial connections far more extensive than previously hypothesized. We've underestimated ancient peoples' navigational capabilities and their appetite for luxury goods, the lead researcher observed. Globalization isn't as modern as we assume.</p>
+        <div class="container-main">
+        <button type="button" class="btn-start">
+            Start Typing Test
+        </button>
+        <h3 class="text-primary">Or click the text and start typing </h3>
+        </div>
+    </main>
+    <footer class="footer hidden">
+        <button type="button" class="btn-restart">Restart Test</button>
+    </footer>
+</body>
+</html>
