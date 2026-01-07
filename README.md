@@ -1,0 +1,3 @@
+Complex solution for a monkeytype application challenge. Made it in raw JS so the code is hard to maintain, the design respects the original layout 100%. Some parts of the logic, such as WPM calculation and typing validation, were implemented with a bit of AI consultation, and there may be minor edge cases—like slight inaccuracies in WPM or issues with typing special characters such as quotes.
+Despite these small problems, the project successfully fulfills its purpose as a functional typing test platform and serves as a solid example of building interactive web applications from scratch using raw JavaScript
+and understanding DOM concepts and state management products.
