@@ -153,12 +153,11 @@ document.addEventListener(('DOMContentLoaded'),()=>{
     function calculateWPM(CorrectChars, charactersTyped)
     {
        let words = CorrectChars / 5 ;
-       let time = timeParagraph.textContent; 
-       let parts = time.split('.');
-       let seconds = Number(parts[1]);
+       let seconds = parseFloat(timeParagraph.textContent);
+       console.log(seconds);
+       
        if(seconds ===0) return;
        let minutes = seconds / 60;
-       
        result = Math.round (words / minutes);
        
        accuracy =Math.round( (CorrectChars / charactersTyped) * 100);
